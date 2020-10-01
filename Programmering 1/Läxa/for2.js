@@ -1,10 +1,27 @@
-let p_klass = document.querySelector("#klass")
+let p_udda = document.querySelector("#udda")
+let p_jamna = document.querySelector("#jamna")
 
-let elever = ["Svenska", "Engelska", "Programmering", "Matte", "Idrott"]
-
-p_klass.innerHTML = "Mina lektioner <br/>" 
-
-for (let k = 0; k < elever.length; k++){
-    p_klass.innerHTML += `${k+1}. ${elever[k]} <br/>`
+p_jamna.innerHTML = "Jämna tal från 0 till 100: "
+p_udda.innerHTML = "Udda tal från 0 till 100: "
+for (let i=0; i<=100; i++){
+    p_jamna.innerHTML += `${i}` 
+    i++
 }
 
+for (let i=1; i<=100; i++){
+    p_udda.innerHTML += `${i}` 
+    i++
+}
+
+
+let p_lektion = document.querySelector("#Lektioner")
+let lektioner = ["Svenska", "Engelska", "Programmering", "Idrott"]
+
+p_lektion.innerHTML = " Mina lektioner är: <br/>"
+
+console.log(lektioner.length)
+
+for (let l = 0; l < lektioner.length; l++){
+    p_lektion.innerHTML += `${l+1} ${lektioner[l]} <br/>`
+
+}
