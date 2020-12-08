@@ -28,7 +28,7 @@ console.log(`8-7=${subtrahera(8,7)}`)
 
 function dividera(tal1, tal2){
     if (tal2 == 0){
-        return "Du ej dela med 0"
+        return "Du får ej dela med 0"
     }
     let kvot = tal1/tal2
     return kvot
@@ -42,3 +42,12 @@ function multiplicera(tal1, tal2){
 }
 
 console.log(`5*2=${multiplicera(5,2)}`)
+
+function cirkelArea(radie){
+    let area = Math.PI*radie**2
+    return area
+}
+
+// anropa cirkelArea: 
+let area10 = cirkelArea(10)
+console.log(`Arean av en cirkel med radie 10 l.e. är ${area10} a.e.`)
